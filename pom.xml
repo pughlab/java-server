@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ca.uhnresearch.pughlab</groupId>
 	<artifactId>tracker-server</artifactId>
-	<version>1.0.0-RELEASE</version>
+	<version>1.0.1-RELEASE</version>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,14 +19,6 @@
 	</properties>
 
 	<dependencies>
-
-		<!-- The web application -->
-		<dependency>
-			<groupId>ca.uhnresearch.pughlab</groupId>
-			<artifactId>tracker-java-restlet</artifactId>
-			<type>war</type>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 
 		<!-- Servlet APIs -->
 		<dependency>
@@ -51,6 +43,11 @@
 			<artifactId>jetty-webapp</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>websocket-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>apache-jsp</artifactId>
